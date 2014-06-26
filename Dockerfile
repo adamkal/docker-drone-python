@@ -1,5 +1,10 @@
 # Pull base image.
 FROM ubuntu:12.04
+MAINTAINER Adam Kaliński <adamkalinski@gmail.com>
+
+# update apt
+RUN apt-get update
+RUN apt-get upgrade -y
 
 # Install Python.
 RUN apt-get install -y python python-dev python-pip python-virtualenv
