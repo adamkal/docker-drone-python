@@ -1,5 +1,5 @@
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu:12.04
 
 # Install Python.
 RUN apt-get install -y python python-dev python-pip python-virtualenv
